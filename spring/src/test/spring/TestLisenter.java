@@ -25,11 +25,12 @@ public class TestLisenter {
 
     @Test
     public void test(){
-        ApplicationContext app = new AnnotationConfigApplicationContext(EventConfig.class);
+        AnnotationConfigApplicationContext app = new AnnotationConfigApplicationContext(EventConfig.class);
         String[] beanNamesForType = app.getBeanNamesForType(PublishEvent.class);
         System.out.println(beanNamesForType[0]);
         System.out.println("容器加载完成");
         PublishEvent event = (PublishEvent) app.getBean("publishEvent");
         event.publishName("zhangjc");
+//        app.
     }
 }
