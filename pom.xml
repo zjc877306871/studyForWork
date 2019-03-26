@@ -9,6 +9,7 @@
   <version>1.0-SNAPSHOT</version>
   <modules>
     <module>javaBasic</module>
+      <module>spring</module>
   </modules>
   <packaging>pom</packaging>
 
