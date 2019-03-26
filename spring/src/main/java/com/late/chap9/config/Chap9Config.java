@@ -2,8 +2,7 @@ package com.late.chap9.config;/**
  * Created by user on 2018/10/11.
  */
 
-import com.zhangjc.springStudy.chap8.dao.CarDao;
-import com.zhangjc.springStudy.chap9.vo.Bird;
+import com.late.chap9.vo.Bird;
 import org.springframework.context.annotation.*;
 
 /**

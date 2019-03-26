@@ -1,11 +1,11 @@
 
-package com.zhangjc.springStudy;
+package spring;
 /**
  * Created by user on 2018/10/11.
  */
 
-import com.zhangjc.springStudy.chap10.bean.BookAop;
-import com.zhangjc.springStudy.chap10.config.Chap10Config;
+import com.late.chap10.bean.BookAop;
+import com.late.chap10.config.Chap10Config;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

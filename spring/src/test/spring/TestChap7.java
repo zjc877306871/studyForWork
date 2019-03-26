@@ -1,10 +1,10 @@
 
-package com.zhangjc.springStudy;
+package spring;
 /**
  * Created by user on 2018/10/11.
  */
 
-import com.zhangjc.springStudy.chap7.config.Chap7Config;
+import com.late.chap7.config.Chap7Config;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

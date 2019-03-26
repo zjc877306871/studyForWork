@@ -1,10 +1,13 @@
-package com.zhangjc.springStudy;/**
+package spring;/**
  * Created by user on 2018/10/11.
  */
 
-import com.zhangjc.springStudy.chap1.Person;
+
+import com.late.chap1.Person;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -18,9 +21,10 @@ public class TestLisenter {
 
     @Test
     public void test(){
-        ApplicationContext app = new ClassPathXmlApplicationContext("bean.xml");
-
+        ConfigurableApplicationContext app = new ClassPathXmlApplicationContext("bean.xml");
+        System.out.println("容器加载完成");
         Person person = (Person) app.getBean("person");
         System.out.println(person);
+        app.refresh();
     }
 }

@@ -2,7 +2,7 @@ package com.zhangjc.springStudy;/**
  * Created by user on 2018/10/11.
  */
 
-import com.zhangjc.springStudy.chap2.config.Chap2Config3;
+import com.late.chap2.config.Chap2Config3;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

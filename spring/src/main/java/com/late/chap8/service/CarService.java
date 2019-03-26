@@ -2,9 +2,8 @@ package com.late.chap8.service;/**
  * Created by user on 2018/10/16.
  */
 
-import com.zhangjc.springStudy.chap8.dao.CarDao;
+import com.late.chap8.dao.CarDao;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 /**

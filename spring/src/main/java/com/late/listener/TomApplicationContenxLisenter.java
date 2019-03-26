@@ -15,12 +15,12 @@ import org.springframework.context.event.ApplicationContextEvent;
  **/
 public class TomApplicationContenxLisenter implements ApplicationListener<ApplicationContextEvent> {
     /**
-     * ApplicationContextEvent 事件在容器启动成功后会触发时间监听
+     * ApplicationContextEvent 事件在容器启动成功后会触发事件监听
      * @param event
      */
     @Override
     public void onApplicationEvent(ApplicationContextEvent event) {
         Person person = (Person)event.getApplicationContext().getBean("person");
-        System.out.println("获取person的名字："+ person.getName());
+        System.out.println("监听事件获取person的名字："+ person.getName());
     }
 }

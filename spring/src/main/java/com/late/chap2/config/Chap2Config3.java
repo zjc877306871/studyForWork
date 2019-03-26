@@ -2,8 +2,8 @@ package com.late.chap2.config;/**
  * Created by user on 2018/10/11.
  */
 
-import com.zhangjc.springStudy.chap1.Person;
-import com.zhangjc.springStudy.chap2.CostomFilter;
+import com.late.chap1.Person;
+import com.late.chap2.CostomFilter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

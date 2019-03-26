@@ -2,8 +2,8 @@ package com.late.chap10.config;/**
  * Created by user on 2018/10/18.
  */
 
-import com.zhangjc.springStudy.chap10.aop.BeanAopHandle;
-import com.zhangjc.springStudy.chap10.bean.BookAop;
+import com.late.chap10.aop.BeanAopHandle;
+import com.late.chap10.bean.BookAop;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.EnableAspectJAutoProxy;

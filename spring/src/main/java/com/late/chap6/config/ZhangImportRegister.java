@@ -2,7 +2,7 @@ package com.late.chap6.config;/**
  * Created by user on 2018/10/12.
  */
 
-import com.zhangjc.springStudy.chap6.config.vo.Pig;
+import com.late.chap6.config.vo.Pig;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;

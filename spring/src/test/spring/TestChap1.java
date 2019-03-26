@@ -1,8 +1,8 @@
-package com.zhangjc.springStudy;/**
+package spring ;/**
  * Created by user on 2018/10/11.
  */
 
-import com.zhangjc.springStudy.chap1.Person;
+import com.late.chap1.Person;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

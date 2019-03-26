@@ -1,11 +1,11 @@
 
-package com.zhangjc.springStudy;
+package spring;
 /**
  * Created by user on 2018/10/11.
  */
 
-import com.zhangjc.springStudy.chap9.config.Chap9Config;
-import com.zhangjc.springStudy.chap9.vo.Bird;
+import com.late.chap9.config.Chap9Config;
+import com.late.chap9.vo.Bird;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 

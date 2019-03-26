@@ -8,7 +8,7 @@
         <property name="name" value="zhangjc"/>
     </bean>
 
-    <bean id="applicationContexlisenter" class="com.zhangjc.springStudy.listener.TomApplicationContenxLisenter">
+    <bean id="applicationContexlisenter" class="com.late.listener.TomApplicationContenxLisenter">
     </bean>
 
 

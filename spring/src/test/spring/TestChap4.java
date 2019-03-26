@@ -1,10 +1,10 @@
 
-package com.zhangjc.springStudy;/**
+package spring;/**
  * Created by user on 2018/10/11.
  */
 
-import com.zhangjc.springStudy.chap1.Person;
-import com.zhangjc.springStudy.chap4.config.Chap4Config;
+import com.late.chap1.Person;
+import com.late.chap4.config.Chap4Config;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;

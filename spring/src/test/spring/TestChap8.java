@@ -1,12 +1,12 @@
 
-package com.zhangjc.springStudy;
+package spring;
 /**
  * Created by user on 2018/10/11.
  */
 
-import com.zhangjc.springStudy.chap8.config.Chap8Config;
-import com.zhangjc.springStudy.chap8.dao.CarDao;
-import com.zhangjc.springStudy.chap8.service.CarService;
+import com.late.chap8.config.Chap8Config;
+import com.late.chap8.dao.CarDao;
+import com.late.chap8.service.CarService;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
