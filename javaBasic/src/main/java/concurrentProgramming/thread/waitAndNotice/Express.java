@@ -3,7 +3,8 @@ package concurrentProgramming.thread.waitAndNotice;
  * Created by user on 2019/2/26.
  */
 
-import com.zhangjc.javaBasic.myThread.basic.TreadSleepUtil;
+
+import concurrentProgramming.thread.TreadSleepUtil;
 
 /**
  * @ClassName Express
