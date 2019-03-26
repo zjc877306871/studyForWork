@@ -15,7 +15,8 @@ import org.springframework.context.event.ApplicationContextEvent;
  **/
 public class TomApplicationContenxLisenter implements ApplicationListener<ApplicationContextEvent> {
     /**
-     * ApplicationContextEvent 事件在容器启动成功后会触发事件监听
+     * ApplicationContextEvent 事件在容器启动到关闭过程中会触发事件监听。他有四个子类
+     * 分别是 上下文启动事件、上下文刷新事件、上下文停止事件、上下文关闭事件
      * @param event
      */
     @Override

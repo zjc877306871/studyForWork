@@ -4,9 +4,13 @@ package spring;/**
 
 
 import com.late.chap1.Person;
+import com.late.event.EventConfig;
+import com.late.event.PublishEvent;
+import com.late.event.TomCustomApplicationEvent;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.AbstractApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -21,10 +25,11 @@ public class TestLisenter {
 
     @Test
     public void test(){
-        ConfigurableApplicationContext app = new ClassPathXmlApplicationContext("bean.xml");
+        ApplicationContext app = new AnnotationConfigApplicationContext(EventConfig.class);
+        String[] beanNamesForType = app.getBeanNamesForType(PublishEvent.class);
+        System.out.println(beanNamesForType[0]);
         System.out.println("容器加载完成");
-        Person person = (Person) app.getBean("person");
-        System.out.println(person);
-        app.refresh();
+        PublishEvent event = (PublishEvent) app.getBean("publishEvent");
+        event.publishName("zhangjc");
     }
 }
