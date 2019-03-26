@@ -24,6 +24,10 @@ public class Leaf extends Mid {
         System.out.println("执行Leaf的构造器");
     }
 
+    /**
+     * 测试类加载过程的初始化会调用staic代码块
+     * @param args
+     */
     public static void main(String[] args) {
 
     }
