@@ -1,4 +1,4 @@
-package com.late.config;/**
+package com.late.chap5.config;/**
  * Created by user on 2018/10/12.
  */
 
@@ -9,13 +9,13 @@ import org.springframework.core.env.Environment;
 import org.springframework.core.type.AnnotatedTypeMetadata;
 
 /**
- * @ClassName LinuxCondition
- * @Description  选择性注入实例，linux系统下注入wangwu实例
+ * @ClassName WindowsCondition
+ * @Description  选择性注入实例，windows系统下注入lisi实例
  * @Autor user
  * @Date 2018/10/12 16:29
  * @Version 1.0
  **/
-public class LinuxCondition implements Condition {
+public class WindowsCondition implements Condition {
     /**
      *
      * @param conditionContext  上下文环境
@@ -30,7 +30,7 @@ public class LinuxCondition implements Condition {
         //获取运行系统
         Environment environment = conditionContext.getEnvironment();
         String os_name = environment.getProperty("os.name");
-        if(os_name.contains("Linux")){
+        if(os_name.contains("Windows")){
             return true;
         }
 

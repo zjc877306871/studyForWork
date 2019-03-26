@@ -1,4 +1,4 @@
-package com.late.config.vo;/**
+package com.late.chap6.config.vo;/**
  * Created by user on 2018/10/12.
  */
 

@@ -1,8 +1,9 @@
-package com.late.config;/**
+package com.late.chap6.config;/**
  * Created by user on 2018/10/15.
  */
 
-import com.zhangjc.springStudy.chap6.config.vo.Self;
+
+import com.late.chap6.config.vo.Self;
 import org.springframework.beans.factory.FactoryBean;
 
 /**

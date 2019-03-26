@@ -1,6 +1,7 @@
-package com.late.config;/**
+package com.late.chap4.config;/**
  * Created by user on 2018/10/11.
  */
+
 
 import com.late.chap1.Person;
 import org.springframework.context.annotation.Bean;

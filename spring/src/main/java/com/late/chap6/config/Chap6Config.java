@@ -1,10 +1,11 @@
-package com.late.config;/**
+package com.late.chap6.config;/**
  * Created by user on 2018/10/11.
  */
 
-import com.zhangjc.springStudy.chap1.Person;
-import com.zhangjc.springStudy.chap6.config.vo.Cat;
-import com.zhangjc.springStudy.chap6.config.vo.Dog;
+
+import com.late.chap1.Person;
+import com.late.chap6.config.vo.Cat;
+import com.late.chap6.config.vo.Dog;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Import;

@@ -1,8 +1,8 @@
-package com.late.config;/**
+package com.late.chap6.config;/**
  * Created by user on 2018/10/12.
  */
 
-import com.late.config.vo.Pig;
+import com.zhangjc.springStudy.chap6.config.vo.Pig;
 import org.springframework.beans.factory.support.BeanDefinitionRegistry;
 import org.springframework.beans.factory.support.RootBeanDefinition;
 import org.springframework.context.annotation.ImportBeanDefinitionRegistrar;
@@ -26,8 +26,8 @@ public class ZhangImportRegister implements ImportBeanDefinitionRegistrar {
     public void registerBeanDefinitions(AnnotationMetadata annotationMetadata, BeanDefinitionRegistry beanDefinitionRegistry) {
 
         //ioc容器中是否包含cat实例
-        boolean cat = beanDefinitionRegistry.containsBeanDefinition("com.zhangjc.springStudy.Cat");
-        boolean dog = beanDefinitionRegistry.containsBeanDefinition("com.zhangjc.springStudy.Dog");
+        boolean cat = beanDefinitionRegistry.containsBeanDefinition("com.zhangjc.springStudy.chap6.config.vo.Cat");
+        boolean dog = beanDefinitionRegistry.containsBeanDefinition("com.zhangjc.springStudy.chap6.config.vo.Dog");
         if(cat && dog){
             //将需要注册时实例用RootBeanDefinition进行封装
             RootBeanDefinition beanDefinition = new RootBeanDefinition(Pig.class);
