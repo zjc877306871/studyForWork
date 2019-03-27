@@ -2,12 +2,12 @@ package com.late.concurrentProgramming.practiceMine.offerlineCreateLibrary.basic
  * Created by user on 2018/10/11.
  */
 
-import com.zhangjc.javaBasic.offerlineCreateLibrary.basicFlow.assist.CreatePendingDocs;
-import com.zhangjc.javaBasic.offerlineCreateLibrary.basicFlow.assist.HandleQuestionBnak;
-import com.zhangjc.javaBasic.offerlineCreateLibrary.basicFlow.service.ProduceDocService;
-import com.zhangjc.javaBasic.offerlineCreateLibrary.basicFlow.vo.SrcDocsVo;
 
-import java.util.LinkedList;
+import com.late.concurrentProgramming.practiceMine.offerlineCreateLibrary.basicFlow.assist.CreatePendingDocs;
+import com.late.concurrentProgramming.practiceMine.offerlineCreateLibrary.basicFlow.assist.HandleQuestionBnak;
+import com.late.concurrentProgramming.practiceMine.offerlineCreateLibrary.basicFlow.service.ProduceDocService;
+import com.late.concurrentProgramming.practiceMine.offerlineCreateLibrary.basicFlow.vo.SrcDocsVo;
+
 import java.util.List;
 
 /**

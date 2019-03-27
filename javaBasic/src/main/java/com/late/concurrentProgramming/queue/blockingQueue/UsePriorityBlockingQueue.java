@@ -1,7 +1,8 @@
 package com.late.concurrentProgramming.queue.blockingQueue;
 
-import com.zhangjc.javaBasic.myThread.ThreadSleepTools;
-import com.zhangjc.javaBasic.queue.entry.People;
+
+import com.late.concurrentProgramming.queue.blockingQueue.entry.People;
+import com.late.concurrentProgramming.thread.TreadSleepUtil;
 
 import java.util.concurrent.PriorityBlockingQueue;
 
@@ -23,7 +24,7 @@ public class UsePriorityBlockingQueue {
             new Thread(productThread).start();
         }
 
-        ThreadSleepTools.sleepSeconds(1);
+        TreadSleepUtil.sleep(1);
         for(int i = 0; i < 5; i++){
             new Thread(consumerThread).start();
         }

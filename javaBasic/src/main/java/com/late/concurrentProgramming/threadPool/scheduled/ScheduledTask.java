@@ -1,6 +1,7 @@
 package com.late.concurrentProgramming.threadPool.scheduled;
 
-import com.zhangjc.javaBasic.myThread.ThreadSleepTools;
+
+import com.late.concurrentProgramming.thread.TreadSleepUtil;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -27,17 +28,17 @@ public class ScheduledTask implements Runnable{
 
         if(count.get() == 0){
             System.out.println("EIGHT_SECOND开始时间= " + ss.format(new Date()));
-            ThreadSleepTools.sleepSeconds(8);
+            TreadSleepUtil.sleep(8);
             System.out.println("EIGHT_SECOND结束时间= " + ss.format(new Date()));
             count.incrementAndGet();
         }else if(count.get() == 1){
             System.out.println("TWO_SECOND 开始时间= " + ss.format(new Date()));
-            ThreadSleepTools.sleepSeconds(2);
+            TreadSleepUtil.sleep(2);
             System.out.println("TWO_SECOND 结束时间= " + ss.format(new Date()));
             count.incrementAndGet();
         }else{
             System.out.println("TEN_SECOND 开始时间= " + ss.format(new Date()));
-            ThreadSleepTools.sleepSeconds(10);
+            TreadSleepUtil.sleep(10);
             System.out.println("TEN_SECOND 结束时间= " + ss.format(new Date()));
             count.incrementAndGet();
         }

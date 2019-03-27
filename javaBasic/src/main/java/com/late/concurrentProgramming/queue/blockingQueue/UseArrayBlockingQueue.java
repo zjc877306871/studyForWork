@@ -1,7 +1,7 @@
 package com.late.concurrentProgramming.queue.blockingQueue;
 
-import com.zhangjc.javaBasic.myThread.ThreadSleepTools;
-import com.zhangjc.javaBasic.queue.entry.People;
+
+import com.late.concurrentProgramming.queue.blockingQueue.entry.People;
 
 import java.util.concurrent.ArrayBlockingQueue;
 

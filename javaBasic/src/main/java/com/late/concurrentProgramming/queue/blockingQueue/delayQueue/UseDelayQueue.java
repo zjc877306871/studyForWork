@@ -2,7 +2,8 @@ package com.late.concurrentProgramming.queue.blockingQueue.delayQueue;/**
  * Created by user on 2018/9/20.
  */
 
-import com.zhangjc.javaBasic.myThread.ThreadSleepTools;
+
+import com.late.concurrentProgramming.thread.TreadSleepUtil;
 
 import java.util.concurrent.DelayQueue;
 
@@ -19,7 +20,7 @@ public class UseDelayQueue {
     public static void main(String[] args) {
         DelayQueue<PackOrder<Order>> delayQueue = new DelayQueue<>();
         new Thread(new PutOrder(delayQueue)).start();
-        ThreadSleepTools.sleepSeconds(3);
+        TreadSleepUtil.sleep(3);
         new Thread(new TakeOrder(delayQueue)).start();
     }
 }

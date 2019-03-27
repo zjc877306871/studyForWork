@@ -2,9 +2,9 @@ package com.late.concurrentProgramming.practiceMine.offerlineCreateLibrary.basic
  * Created by user on 2018/10/10.
  */
 
-import com.zhangjc.javaBasic.offerlineCreateLibrary.basicFlow.constant.Constants;
-import com.zhangjc.javaBasic.offerlineCreateLibrary.basicFlow.assist.BussinessSql;
-import com.zhangjc.javaBasic.offerlineCreateLibrary.basicFlow.vo.QuestionInDBVo;
+
+import com.late.concurrentProgramming.practiceMine.offerlineCreateLibrary.basicFlow.constant.Constants;
+import com.late.concurrentProgramming.practiceMine.offerlineCreateLibrary.basicFlow.vo.QuestionInDBVo;
 
 import java.util.Random;
 import java.util.concurrent.ConcurrentHashMap;
@@ -31,7 +31,7 @@ public class HandleQuestionBnak {
 
     //初始化题库
     public static void initBank(){
-        for(int i=0; i< Constants.SIZE_QUESTION_LIBRARY; i++){
+        for(int i = 0; i< Constants.SIZE_QUESTION_LIBRARY; i++){
             String questionContent = makeQuestionDetail(Constants.LENGTH_QUESTION);
             questionMap.put(i,new QuestionInDBVo(i,questionContent));
         }
