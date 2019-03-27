@@ -2,7 +2,8 @@ package com.late.concurrentProgramming.practiceMine.offerlineCreateLibrary.basic
  * Created by user on 2018/10/11.
  */
 
-import com.zhangjc.javaBasic.offerlineCreateLibrary.basicFlow.assist.HandleQuestionBnak;
+
+import com.late.concurrentProgramming.practiceMine.offerlineCreateLibrary.basicFlow.assist.HandleQuestionBnak;
 
 /**
  * @ClassName SingleQstService

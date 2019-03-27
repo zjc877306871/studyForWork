@@ -9,8 +9,8 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>javaBasic</artifactId>
-    <packaging>jar</packaging>
+    <artifactId>servlet</artifactId>
+    <packaging>war</packaging>
 
 
     <dependencies>
@@ -20,10 +20,18 @@
             <version>4.11</version>
             <scope>test</scope>
         </dependency>
+
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
 
+
     <build>
-        <finalName>javaBasic</finalName>
+        <finalName>servlet</finalName>
         <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
             <plugins>
                 <plugin>
@@ -58,4 +66,5 @@
             </plugins>
         </pluginManagement>
     </build>
+
 </project>

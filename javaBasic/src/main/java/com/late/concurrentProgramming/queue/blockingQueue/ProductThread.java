@@ -1,11 +1,11 @@
 package com.late.concurrentProgramming.queue.blockingQueue;
 
-import com.zhangjc.javaBasic.queue.entry.People;
+
+import com.late.concurrentProgramming.queue.blockingQueue.entry.People;
 
 import java.util.Random;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingDeque;
-import java.util.concurrent.LinkedBlockingQueue;
 
 /**
  * 模拟生产者生成信息插入队列
