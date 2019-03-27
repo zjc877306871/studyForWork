@@ -3,6 +3,8 @@ package com.late.servlet;/**
  */
 
 
+import com.late.servlet.business.BusyServlet;
+
 import javax.servlet.*;
 import javax.servlet.annotation.HandlesTypes;
 import java.util.Collection;
@@ -17,11 +19,15 @@ import java.util.Set;
  * @Date 2019/3/27 10:29
  * @Version 1.0
  **/
-@HandlesTypes(TomService.class)
+@HandlesTypes(TomServlet.class)
 public class TomServletContainerInitializer implements ServletContainerInitializer {
     @Override
     public void onStartup(Set<Class<?>> set, ServletContext servletContext) throws ServletException {
 
+        //未解HandlesTypes注解内的值，在这娶不到
+//        for (Class clazz : set){
+//            System.out.println(clazz);
+//        }
 
         //添加 自定义过滤器
         FilterRegistration.Dynamic tomFliter = servletContext.addFilter("tomFliter", new TomFilter());
@@ -39,6 +45,8 @@ public class TomServletContainerInitializer implements ServletContainerInitializ
 
         //添加自定义 com.late.servlet
         servletContext.addServlet("tomServlet",TomServlet.class);
+        ServletRegistration.Dynamic busyServlet = servletContext.addServlet("busyServlet", BusyServlet.class);
+        busyServlet.addMapping("/busy");
         //将过滤器和请求链接相关联
         tomFliter.addMappingForUrlPatterns(EnumSet.of(DispatcherType.REQUEST),true,"/*");
 

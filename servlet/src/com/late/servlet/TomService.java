@@ -9,5 +9,5 @@ package com.late.servlet;/**
  * @Date 2019/3/27 11:22
  * @Version 1.0
  **/
-public class TomService {
+public interface TomService {
 }
