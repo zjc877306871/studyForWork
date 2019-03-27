@@ -24,6 +24,6 @@ public class TomLisenter implements ServletContextListener {
 
     @Override
     public void contextDestroyed(ServletContextEvent servletContextEvent) {
-        System.out.println("ServletContext 销毁");
+        System.out.println("TomLisenter 销毁");
     }
 }

@@ -3,12 +3,10 @@ package com.late.servlet;/**
  */
 
 
-import javax.servlet.FilterRegistration;
-import javax.servlet.ServletContainerInitializer;
-import javax.servlet.ServletContext;
-import javax.servlet.ServletException;
+import javax.servlet.*;
 import javax.servlet.annotation.HandlesTypes;
 import java.util.Collection;
+import java.util.EnumSet;
 import java.util.Iterator;
 import java.util.Set;
 
@@ -41,6 +39,8 @@ public class TomServletContainerInitializer implements ServletContainerInitializ
 
         //添加自定义 com.late.servlet
         servletContext.addServlet("tomServlet",TomServlet.class);
+        //将过滤器和请求链接相关联
+        tomFliter.addMappingForUrlPatterns(EnumSet.of(DispatcherType.REQUEST),true,"/*");
 
     }
 }

@@ -22,7 +22,6 @@ public class TomFilter implements javax.servlet.Filter {
     @Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
         System.out.println("TomFilter执行业务doFilter");
-        System.out.println(servletRequest.getCharacterEncoding());
         filterChain.doFilter(servletRequest,servletResponse);
     }
 
