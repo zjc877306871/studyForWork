@@ -2,9 +2,8 @@ package com.late.concurrentProgramming.practiceMine.offerlineCreateLibrary.basic
  * Created by user on 2018/10/10.
  */
 
-import com.zhangjc.javaBasic.offerlineCreateLibrary.basicFlow.constant.Constants;
-import com.zhangjc.javaBasic.offerlineCreateLibrary.basicFlow.vo.QuestionInDBVo;
-import com.zhangjc.javaBasic.offerlineCreateLibrary.basicFlow.vo.SrcDocsVo;
+import com.late.concurrentProgramming.practiceMine.offerlineCreateLibrary.basicFlow.constant.Constants;
+import com.late.concurrentProgramming.practiceMine.offerlineCreateLibrary.basicFlow.vo.SrcDocsVo;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
