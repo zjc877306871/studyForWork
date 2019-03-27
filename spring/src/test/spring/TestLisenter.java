@@ -21,6 +21,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  * @Date 2018/10/11 16:05
  * @Version 1.0
  **/
+
 public class TestLisenter {
 
     @Test
@@ -31,6 +32,5 @@ public class TestLisenter {
         System.out.println("容器加载完成");
         PublishEvent event = (PublishEvent) app.getBean("publishEvent");
         event.publishName("zhangjc");
-//        app.
     }
 }
