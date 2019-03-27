@@ -16,10 +16,9 @@ import javax.servlet.ServletContextListener;
 public class TomLisenter implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-        System.out.println("ServletContext 初始化");
+        System.out.println("TomLisenter 初始化");
         ServletContext servletContext = servletContextEvent.getServletContext();
         String contextPath = servletContext.getContextPath();
-        System.out.println("contextPath "+ contextPath);
 
     }
 
