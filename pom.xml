@@ -11,6 +11,7 @@
       <module>javaBasic</module>
       <module>spring</module>
       <module>servlet</module>
+      <module>springMvc</module>
   </modules>
   <packaging>pom</packaging>
 
