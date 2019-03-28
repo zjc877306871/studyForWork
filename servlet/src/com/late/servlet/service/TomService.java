@@ -1,4 +1,4 @@
-package com.late.servlet;/**
+package com.late.servlet.service;/**
  * Created by user on 2019/3/27.
  */
 
@@ -10,4 +10,6 @@ package com.late.servlet;/**
  * @Version 1.0
  **/
 public interface TomService {
+
+    public void send();
 }
