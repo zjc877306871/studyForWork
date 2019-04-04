@@ -6,16 +6,16 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
                            http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.1.xsd
                            http://code.alibabatech.com/schema/dubbo http://code.alibabatech.com/schema/dubbo/dubbo.xsd">
-    <!--重写spring注解扫描，并增加dubbo特有的注解扫描-->
-    <dubbo:annotation package="com.late"/>
-    <!-- 提供方应用信息，用于计算依赖关系 -->
-    <dubbo:application name="dubboConsumer"/>
-    <!--协议-->
-    <dubbo:protocol name="dubbo" port="20881"/>
-    <!--注册中心-->
+
+    <dubbo:application name="dubbo_service"/>
+
     <dubbo:registry address="zookeeper://127.0.0.1:2181" />
-    <!--check为false，系统启动不检测消费端是否存在-->
-    <!--添加了<dubbo:annotation package="com.late"/>配置，就是直接使用注解，不需要配置bean了-->
-    <!--<dubbo:reference id="orderService" interface="com.late.interfaceApi.OrderService" check="false"/>-->
+    <dubbo:protocol name="dubbo" port="20881"/>
+
+    <dubbo:provider />
+
+    <dubbo:service interface="com.late.interfaceApi.OrderService" ref="orderService"/>
+    <bean class="com.late.service.OrderServiceImpl" name="orderService"/>
+
 
 </beans>

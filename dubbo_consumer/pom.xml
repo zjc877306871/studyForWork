@@ -14,6 +14,11 @@
 
 
     <dependencies>
+        <dependency>
+            <groupId>com.late.catch</groupId>
+            <artifactId>service_api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
 
         <!--servlet  jar包-->
         <dependency>
